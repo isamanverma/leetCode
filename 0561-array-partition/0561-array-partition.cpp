@@ -6,7 +6,8 @@ public:
         int n = nums.size();
         for(int i = 0; i<n; i+=2)
         {
-            ans+=min(nums[i], nums[i+1]);
+            int temp = min(nums[i], nums[i+1]);
+            ans+=temp;
         }
         return ans;
         
